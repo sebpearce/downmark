@@ -13,10 +13,8 @@
     "url": "git+https://github.com/electron/electron-quick-start.git"
   },
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial"
+    "markdown",
+    "electron"
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
