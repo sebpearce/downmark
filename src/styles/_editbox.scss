@@ -1,0 +1,10 @@
+.editbox {
+  flex: 1;
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 1em;
+  font-family: $default-editing-font-family;
+  font-size: 0.7rem;
+}

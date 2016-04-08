@@ -1,3 +1,39 @@
-body {
-  background: blue;
+$default-font-family: 'Source Sans Pro';
+$default-editing-font-family: 'Monaco';
+
+@import 'colors';
+@import 'header';
+@import 'footer';
+@import 'panels';
+@import 'editbox';
+
+* {
+  box-sizing: border-box;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body > div, body > div > div {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: white;
+  font-family: $default-font-family;
+  // overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
