@@ -1,24 +1,21 @@
-
 .panelcontainer {
   display: flex;
   flex: 1;
-  // background: hsla(10,0%,80%,0.5);
-}
-
-.leftpanel {
-  // border-right: 2px solid #444;
-  box-shadow: 0 0 30px hsla(0,0%,0%,0.2);
-  z-index: 10;
 }
 
 .leftpanel, .rightpanel {
-  flex: 1;
   display: flex;
   flex-direction: column;
 }
 
+.leftpanel {
+  flex: 21;
+  border-right: 2px solid #ddd;
+  // box-shadow: 0 0 10px hsla(0,0%,0%,0.4);
+  z-index: 10;
+}
+
 .rightpanel {
-  background: $rightpanel-bgcolor;
-  color: $rightpanel-color;
+  flex: 34;
   z-index: 1;
 }

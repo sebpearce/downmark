@@ -10,12 +10,22 @@ const BrowserWindow = electron.BrowserWindow;
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow;
 
+
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  mainWindow = new BrowserWindow({width: 960, height: 640});
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/index.html');
+
+  // https://github.com/electron/electron/blob/master/docs/api/web-contents.md
+  const webContents = mainWindow.webContents;
+
+  webContents.on('will-navigate', function(event, url) {
+    event.preventDefault();
+    let newWindow = new BrowserWindow({width: 960, height: 600});
+    newWindow.loadURL(url);
+  });
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();

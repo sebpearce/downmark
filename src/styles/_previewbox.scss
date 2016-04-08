@@ -1,0 +1,12 @@
+.previewbox {
+  flex: 1;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: $previewbox-padding;
+  background: $previewbox-bgcolor;
+  color: $previewbox-color;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+

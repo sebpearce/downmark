@@ -1,0 +1,88 @@
+@import 'colors';
+
+$preview-fontsize: 13px;
+$preview-lineheight: 1.5;
+
+// remove top margin from whatever the first element is
+.preview-styles > *:first-child {
+  margin-top: 0;
+}
+
+// preview styles
+.preview-styles {
+
+  font-family: $preview-font-family;
+  font-size: $preview-fontsize;
+  line-height: $preview-lineheight;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  h1 { 
+    font-size: 3em; 
+    // font-weight: 300;
+  }
+
+  h2 { 
+    font-size: 1.8em; 
+  }
+
+  h4, h5, h6 {
+    font-size: 1em;
+  }
+
+  a {
+    text-decoration: none;
+    color: $preview-link-color;
+    &:visited {
+      color: $preview-visited-color;
+    }
+    &:hover {
+      color: $preview-hover-color;
+    }
+  }
+
+  ul,
+  ol {
+    margin: 1.5em 0;
+  }
+
+  ul li,
+  ol li {
+    margin: 0.5em 0;
+  }
+
+  pre {
+    background: $preview-pre-bgcolor;
+    color: $preview-pre-color;
+    padding: 1em 1.3em;
+    margin: 1.5em 0;
+    max-width: 70vw;
+    & > code {
+      padding: 0;
+      background: inherit;
+      color: inherit;
+    }
+  }
+
+  code {
+    font-family: $editing-font-family;
+    // font-size: 0.9em;
+    background: $preview-code-bgcolor;
+    color: $preview-code-color;
+    padding: 0.2em 0.4em;
+    line-height: inherit;
+  }
+
+  blockquote {
+    margin: 1.5em 2em;
+    background: $preview-blockquote-bgcolor;
+    padding: 0 1.3em;
+    & p {
+      padding: 1em 0;
+    }
+  }
+
+}

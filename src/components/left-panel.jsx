@@ -7,7 +7,7 @@ var LeftPanel = React.createClass({
   render: function() {
     return (
       <div className="leftpanel">
-        <EditBox />
+        <EditBox setRawContent={this.props.setRawContent} rawContent={this.props.rawContent} />
       </div>
     )
   }

@@ -1,10 +1,18 @@
+$editbox-fontsize: 14px;
+
 .editbox {
   flex: 1;
   width: 100%;
   resize: none;
   border: none;
   outline: none;
-  padding: 1em;
-  font-family: $default-editing-font-family;
-  font-size: 0.7rem;
+  padding: $editbox-padding;
+  font-family: $editing-font-family;
+  font-size: $editbox-fontsize;
+  background: $editbox-bgcolor;
+  color: $editbox-color;
+  &::selection {
+    background: #888;
+    color: white;
+  }
 }

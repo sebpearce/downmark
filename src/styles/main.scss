@@ -1,11 +1,17 @@
 $default-font-family: 'Source Sans Pro';
-$default-editing-font-family: 'Monaco';
+$editing-font-family: 'Consolas', 'Menlo', 'Monaco', 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, sans-serif;
+$preview-font-family: $default-font-family;
+// $preview-font-family: 'Helvetica Neue';
 
+@import 'layout';
+@import 'typography';
 @import 'colors';
 @import 'header';
 @import 'footer';
 @import 'panels';
 @import 'editbox';
+@import 'previewbox';
+@import 'preview-styles';
 
 * {
   box-sizing: border-box;
@@ -24,13 +30,14 @@ body {
   margin: 0;
   background: white;
   font-family: $default-font-family;
-  // overflow: hidden;
+  color: $default-text-color;
+  overflow: hidden;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  // min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
