@@ -12,7 +12,6 @@ import LeftPanel from './components/left-panel.jsx';
 import RightPanel from './components/right-panel.jsx';
 import Header from './components/header.jsx';
 import Footer from './components/footer.jsx';
-import convert from './scripts/convert.js';
 
 // Remarkable: https://github.com/jonschlinkert/remarkable
 import Remarkable from 'remarkable';
